@@ -7,15 +7,11 @@
 
 import Foundation
 
-let sharedPListResolver = PListResolver(plistName: "Config")
+let sharedPListResolver = PListResolver()
 
 class PListResolver {
     
-    private let plistName: String
-
-    init(plistName: String) {
-        self.plistName = plistName
-    }
+    private let plistName: String = "Config"
     
     private func getPlistDictionary() -> [String:Any] {
         

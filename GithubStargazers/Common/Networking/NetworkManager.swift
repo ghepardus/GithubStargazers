@@ -16,9 +16,19 @@ class NetworkManager {
     func loadStargazers(request: StargazersListRequest,
                         resultHandler: @escaping (Result<[Stargazer], StargazerError>) -> Void) {
         
-        guard let url = URL(string: baseUrl)?
+        guard let initialURL = URL(string: baseUrl)?
                 .appendingPathComponent("\(request.repoName)/\(request.owner)/stargazers")
                 else {
+            resultHandler(.failure(.badUrl))
+            return
+        }
+        
+        let queryItems = [URLQueryItem(name: "per_page", value: "\(request.itemsPerPage)"),
+                          URLQueryItem(name: "page", value: "\(request.pageNumber)")]
+        var urlComps = URLComponents(string: initialURL.absoluteString)
+        urlComps?.queryItems = queryItems
+        
+        guard let url = urlComps?.url else {
             resultHandler(.failure(.badUrl))
             return
         }

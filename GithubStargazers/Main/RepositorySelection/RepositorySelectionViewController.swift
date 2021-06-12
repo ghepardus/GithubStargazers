@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RepositorySelectionViewController: UIViewController {
+class RepositorySelectionViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
