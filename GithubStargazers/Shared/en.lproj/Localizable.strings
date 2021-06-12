@@ -5,3 +5,8 @@
   Created by Mario Severino on 12/06/21.
   
 */
+
+"confirm" = "Confirm";
+
+"repository.owner" = "Repository Owner";
+"repository.name" = "Repository Name";

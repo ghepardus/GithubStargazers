@@ -38,6 +38,11 @@ class RepositorySelectionViewController: BaseViewController<RepositorySelectionV
     }
     
     private func setupUI() {
+        
+        repoTF.placeholder = NSLocalizedString("repository.name", comment: "Repository name placeholder")
+        ownerTF.placeholder = NSLocalizedString("repository.owner", comment: "Repository owner placeholder")
+        
+        confirmButton.setTitle(title: NSLocalizedString("confirm", comment: "confirm"))
         confirmButton.addTarget(self, action: #selector(confirmAction), for: .touchUpInside)
     }
     
@@ -49,9 +54,10 @@ class RepositorySelectionViewController: BaseViewController<RepositorySelectionV
             
             switch result {
             case .failure(let error):
+                print(error)
             case .success(let success):
                 if let vc = self.storyboard?.instantiateViewController(withIdentifier: "StargazerListViewController") as? StargazerListViewController {
-                    vc.viewModel = StargazerListViewModel(owner: owner, name: name)
+                    vc.viewModel = StargazerListViewModel(owner: success.owner, name: success.name)
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
                 

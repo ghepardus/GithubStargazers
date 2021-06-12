@@ -29,6 +29,7 @@
 		41F5C9E32674EC53002CFB51 /* StargazerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9E22674EC53002CFB51 /* StargazerListViewModel.swift */; };
 		41F5C9E52674FB08002CFB51 /* NetworkManager+StargazersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9E42674FB08002CFB51 /* NetworkManager+StargazersList.swift */; };
 		41F5C9EC267501CF002CFB51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C9EE267501CF002CFB51 /* Localizable.strings */; };
+		41F5C9FD26750483002CFB51 /* Button+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9FC26750483002CFB51 /* Button+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,11 +76,12 @@
 		41F5C9E22674EC53002CFB51 /* StargazerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerListViewModel.swift; sourceTree = "<group>"; };
 		41F5C9E42674FB08002CFB51 /* NetworkManager+StargazersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+StargazersList.swift"; sourceTree = "<group>"; };
 		41F5C9ED267501CF002CFB51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		41F5C9EF267501D4002CFB51 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		41F5C9F2267501E9002CFB51 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = it.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41F5C9F3267501E9002CFB51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41F5C9F626750240002CFB51 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = it.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41F5C9F726750240002CFB51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41F5C9FA267503B7002CFB51 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		41F5C9FC26750483002CFB51 /* Button+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		41F5C9872674A41A002CFB51 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				41F5C9FB26750472002CFB51 /* Extensions */,
 				41F5C9DB2674C4AA002CFB51 /* Classes */,
 				41F5C9882674A41A002CFB51 /* Networking */,
 				41F5C9892674A41A002CFB51 /* Data */,
@@ -259,6 +262,14 @@
 				41F5C9DE2674C4E8002CFB51 /* BaseViewModel.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		41F5C9FB26750472002CFB51 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41F5C9FC26750483002CFB51 /* Button+Utils.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +410,7 @@
 				41F5C94C2674A39F002CFB51 /* AppDelegate.swift in Sources */,
 				41F5C9DD2674C4C6002CFB51 /* BaseViewController.swift in Sources */,
 				41F5C98E2674A41A002CFB51 /* PListResolver.swift in Sources */,
+				41F5C9FD26750483002CFB51 /* Button+Utils.swift in Sources */,
 				41F5C9E12674EC43002CFB51 /* StargazerListViewController.swift in Sources */,
 				41F5C9D82674B23D002CFB51 /* StargazersListRequest.swift in Sources */,
 				41F5C9DF2674C4E8002CFB51 /* BaseViewModel.swift in Sources */,
@@ -466,7 +478,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				41F5C9ED267501CF002CFB51 /* en */,
-				41F5C9EF267501D4002CFB51 /* it */,
+				41F5C9FA267503B7002CFB51 /* it */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

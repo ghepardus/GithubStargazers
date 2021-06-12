@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SplashViewController: BaseViewController {
+class SplashViewController: UIViewController {
 
     //MARK: - Controller LifeCycle
     override func viewDidLoad() {
