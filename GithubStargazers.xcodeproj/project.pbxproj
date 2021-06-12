@@ -7,66 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41F5C99F2674A6C4002CFB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C99E2674A6C4002CFB51 /* AppDelegate.swift */; };
-		41F5C9A12674A6C4002CFB51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9A02674A6C4002CFB51 /* SceneDelegate.swift */; };
-		41F5C9A32674A6C4002CFB51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9A22674A6C4002CFB51 /* ViewController.swift */; };
-		41F5C9A62674A6C4002CFB51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C9A42674A6C4002CFB51 /* Main.storyboard */; };
-		41F5C9A82674A6C6002CFB51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C9A72674A6C6002CFB51 /* Assets.xcassets */; };
-		41F5C9AB2674A6C6002CFB51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C9A92674A6C6002CFB51 /* LaunchScreen.storyboard */; };
-		41F5C9B62674A6C6002CFB51 /* GithubStargazersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9B52674A6C6002CFB51 /* GithubStargazersTests.swift */; };
-		41F5C9C12674A6C6002CFB51 /* GithubStargazersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9C02674A6C6002CFB51 /* GithubStargazersUITests.swift */; };
+		41F5C94C2674A39F002CFB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C94B2674A39F002CFB51 /* AppDelegate.swift */; };
+		41F5C94E2674A39F002CFB51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C94D2674A39F002CFB51 /* SceneDelegate.swift */; };
+		41F5C9502674A39F002CFB51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C94F2674A39F002CFB51 /* ViewController.swift */; };
+		41F5C9532674A39F002CFB51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C9512674A39F002CFB51 /* Main.storyboard */; };
+		41F5C9552674A3A0002CFB51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C9542674A3A0002CFB51 /* Assets.xcassets */; };
+		41F5C9582674A3A0002CFB51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C9562674A3A0002CFB51 /* LaunchScreen.storyboard */; };
+		41F5C9632674A3A1002CFB51 /* GithubStargazersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9622674A3A1002CFB51 /* GithubStargazersTests.swift */; };
+		41F5C96E2674A3A1002CFB51 /* GithubStargazersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C96D2674A3A1002CFB51 /* GithubStargazersUITests.swift */; };
+		41F5C9842674A3F2002CFB51 /* RepositorySelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C97F2674A3F2002CFB51 /* RepositorySelectionViewModel.swift */; };
+		41F5C9852674A3F2002CFB51 /* RepositorySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9802674A3F2002CFB51 /* RepositorySelectionViewController.swift */; };
+		41F5C9862674A3F2002CFB51 /* RepositorySelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C9812674A3F2002CFB51 /* RepositorySelectionViewController.xib */; };
+		41F5C98D2674A41A002CFB51 /* Stargazer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C98A2674A41A002CFB51 /* Stargazer.swift */; };
+		41F5C98E2674A41A002CFB51 /* PListResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C98C2674A41A002CFB51 /* PListResolver.swift */; };
+		41F5C9902674A430002CFB51 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C98F2674A430002CFB51 /* Config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		41F5C9B22674A6C6002CFB51 /* PBXContainerItemProxy */ = {
+		41F5C95F2674A3A1002CFB51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 41F5C9932674A6C4002CFB51 /* Project object */;
+			containerPortal = 41F5C9402674A39F002CFB51 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 41F5C99A2674A6C4002CFB51;
+			remoteGlobalIDString = 41F5C9472674A39F002CFB51;
 			remoteInfo = GithubStargazers;
 		};
-		41F5C9BD2674A6C6002CFB51 /* PBXContainerItemProxy */ = {
+		41F5C96A2674A3A1002CFB51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 41F5C9932674A6C4002CFB51 /* Project object */;
+			containerPortal = 41F5C9402674A39F002CFB51 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 41F5C99A2674A6C4002CFB51;
+			remoteGlobalIDString = 41F5C9472674A39F002CFB51;
 			remoteInfo = GithubStargazers;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		41F5C99B2674A6C4002CFB51 /* GithubStargazers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubStargazers.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		41F5C99E2674A6C4002CFB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41F5C9A02674A6C4002CFB51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41F5C9A22674A6C4002CFB51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		41F5C9A52674A6C4002CFB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41F5C9A72674A6C6002CFB51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		41F5C9AA2674A6C6002CFB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		41F5C9AC2674A6C6002CFB51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41F5C9B12674A6C6002CFB51 /* GithubStargazersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubStargazersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41F5C9B52674A6C6002CFB51 /* GithubStargazersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubStargazersTests.swift; sourceTree = "<group>"; };
-		41F5C9B72674A6C6002CFB51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41F5C9BC2674A6C6002CFB51 /* GithubStargazersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubStargazersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41F5C9C02674A6C6002CFB51 /* GithubStargazersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubStargazersUITests.swift; sourceTree = "<group>"; };
-		41F5C9C22674A6C6002CFB51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F5C9482674A39F002CFB51 /* GithubStargazers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubStargazers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F5C94B2674A39F002CFB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41F5C94D2674A39F002CFB51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41F5C94F2674A39F002CFB51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41F5C9522674A39F002CFB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41F5C9542674A3A0002CFB51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41F5C9572674A3A0002CFB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41F5C9592674A3A0002CFB51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F5C95E2674A3A1002CFB51 /* GithubStargazersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubStargazersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F5C9622674A3A1002CFB51 /* GithubStargazersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubStargazersTests.swift; sourceTree = "<group>"; };
+		41F5C9642674A3A1002CFB51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F5C9692674A3A1002CFB51 /* GithubStargazersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubStargazersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F5C96D2674A3A1002CFB51 /* GithubStargazersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubStargazersUITests.swift; sourceTree = "<group>"; };
+		41F5C96F2674A3A1002CFB51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F5C97F2674A3F2002CFB51 /* RepositorySelectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorySelectionViewModel.swift; sourceTree = "<group>"; };
+		41F5C9802674A3F2002CFB51 /* RepositorySelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorySelectionViewController.swift; sourceTree = "<group>"; };
+		41F5C9812674A3F2002CFB51 /* RepositorySelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepositorySelectionViewController.xib; sourceTree = "<group>"; };
+		41F5C98A2674A41A002CFB51 /* Stargazer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stargazer.swift; sourceTree = "<group>"; };
+		41F5C98C2674A41A002CFB51 /* PListResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListResolver.swift; sourceTree = "<group>"; };
+		41F5C98F2674A430002CFB51 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		41F5C9982674A6C4002CFB51 /* Frameworks */ = {
+		41F5C9452674A39F002CFB51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41F5C9AE2674A6C6002CFB51 /* Frameworks */ = {
+		41F5C95B2674A3A1002CFB51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41F5C9B92674A6C6002CFB51 /* Frameworks */ = {
+		41F5C9662674A3A1002CFB51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,68 +88,146 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41F5C9922674A6C4002CFB51 = {
+		41F5C93F2674A39F002CFB51 = {
 			isa = PBXGroup;
 			children = (
-				41F5C99D2674A6C4002CFB51 /* GithubStargazers */,
-				41F5C9B42674A6C6002CFB51 /* GithubStargazersTests */,
-				41F5C9BF2674A6C6002CFB51 /* GithubStargazersUITests */,
-				41F5C99C2674A6C4002CFB51 /* Products */,
+				41F5C94A2674A39F002CFB51 /* GithubStargazers */,
+				41F5C9612674A3A1002CFB51 /* GithubStargazersTests */,
+				41F5C96C2674A3A1002CFB51 /* GithubStargazersUITests */,
+				41F5C9492674A39F002CFB51 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		41F5C99C2674A6C4002CFB51 /* Products */ = {
+		41F5C9492674A39F002CFB51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41F5C99B2674A6C4002CFB51 /* GithubStargazers.app */,
-				41F5C9B12674A6C6002CFB51 /* GithubStargazersTests.xctest */,
-				41F5C9BC2674A6C6002CFB51 /* GithubStargazersUITests.xctest */,
+				41F5C9482674A39F002CFB51 /* GithubStargazers.app */,
+				41F5C95E2674A3A1002CFB51 /* GithubStargazersTests.xctest */,
+				41F5C9692674A3A1002CFB51 /* GithubStargazersUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		41F5C99D2674A6C4002CFB51 /* GithubStargazers */ = {
+		41F5C94A2674A39F002CFB51 /* GithubStargazers */ = {
 			isa = PBXGroup;
 			children = (
-				41F5C99E2674A6C4002CFB51 /* AppDelegate.swift */,
-				41F5C9A02674A6C4002CFB51 /* SceneDelegate.swift */,
-				41F5C9A22674A6C4002CFB51 /* ViewController.swift */,
-				41F5C9A42674A6C4002CFB51 /* Main.storyboard */,
-				41F5C9A72674A6C6002CFB51 /* Assets.xcassets */,
-				41F5C9A92674A6C6002CFB51 /* LaunchScreen.storyboard */,
-				41F5C9AC2674A6C6002CFB51 /* Info.plist */,
+				41F5C94B2674A39F002CFB51 /* AppDelegate.swift */,
+				41F5C94D2674A39F002CFB51 /* SceneDelegate.swift */,
+				41F5C94F2674A39F002CFB51 /* ViewController.swift */,
+				41F5C9512674A39F002CFB51 /* Main.storyboard */,
+				41F5C9562674A3A0002CFB51 /* LaunchScreen.storyboard */,
+				41F5C9592674A3A0002CFB51 /* Info.plist */,
+				41F5C9912674A436002CFB51 /* Shared */,
+				41F5C9872674A41A002CFB51 /* Common */,
+				41F5C97D2674A3F2002CFB51 /* Main */,
 			);
 			path = GithubStargazers;
 			sourceTree = "<group>";
 		};
-		41F5C9B42674A6C6002CFB51 /* GithubStargazersTests */ = {
+		41F5C9612674A3A1002CFB51 /* GithubStargazersTests */ = {
 			isa = PBXGroup;
 			children = (
-				41F5C9B52674A6C6002CFB51 /* GithubStargazersTests.swift */,
-				41F5C9B72674A6C6002CFB51 /* Info.plist */,
+				41F5C9622674A3A1002CFB51 /* GithubStargazersTests.swift */,
+				41F5C9642674A3A1002CFB51 /* Info.plist */,
 			);
 			path = GithubStargazersTests;
 			sourceTree = "<group>";
 		};
-		41F5C9BF2674A6C6002CFB51 /* GithubStargazersUITests */ = {
+		41F5C96C2674A3A1002CFB51 /* GithubStargazersUITests */ = {
 			isa = PBXGroup;
 			children = (
-				41F5C9C02674A6C6002CFB51 /* GithubStargazersUITests.swift */,
-				41F5C9C22674A6C6002CFB51 /* Info.plist */,
+				41F5C96D2674A3A1002CFB51 /* GithubStargazersUITests.swift */,
+				41F5C96F2674A3A1002CFB51 /* Info.plist */,
 			);
 			path = GithubStargazersUITests;
+			sourceTree = "<group>";
+		};
+		41F5C97D2674A3F2002CFB51 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				41F5C97E2674A3F2002CFB51 /* RepositorySelection */,
+				41F5C9822674A3F2002CFB51 /* StargazersList */,
+				41F5C9832674A3F2002CFB51 /* StargazerDetail */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		41F5C97E2674A3F2002CFB51 /* RepositorySelection */ = {
+			isa = PBXGroup;
+			children = (
+				41F5C97F2674A3F2002CFB51 /* RepositorySelectionViewModel.swift */,
+				41F5C9802674A3F2002CFB51 /* RepositorySelectionViewController.swift */,
+				41F5C9812674A3F2002CFB51 /* RepositorySelectionViewController.xib */,
+			);
+			path = RepositorySelection;
+			sourceTree = "<group>";
+		};
+		41F5C9822674A3F2002CFB51 /* StargazersList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StargazersList;
+			sourceTree = "<group>";
+		};
+		41F5C9832674A3F2002CFB51 /* StargazerDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StargazerDetail;
+			sourceTree = "<group>";
+		};
+		41F5C9872674A41A002CFB51 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				41F5C9882674A41A002CFB51 /* Networking */,
+				41F5C9892674A41A002CFB51 /* Data */,
+				41F5C98B2674A41A002CFB51 /* Resolver */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		41F5C9882674A41A002CFB51 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		41F5C9892674A41A002CFB51 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				41F5C98A2674A41A002CFB51 /* Stargazer.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		41F5C98B2674A41A002CFB51 /* Resolver */ = {
+			isa = PBXGroup;
+			children = (
+				41F5C98C2674A41A002CFB51 /* PListResolver.swift */,
+			);
+			path = Resolver;
+			sourceTree = "<group>";
+		};
+		41F5C9912674A436002CFB51 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				41F5C9542674A3A0002CFB51 /* Assets.xcassets */,
+				41F5C98F2674A430002CFB51 /* Config.plist */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		41F5C99A2674A6C4002CFB51 /* GithubStargazers */ = {
+		41F5C9472674A39F002CFB51 /* GithubStargazers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41F5C9C52674A6C6002CFB51 /* Build configuration list for PBXNativeTarget "GithubStargazers" */;
+			buildConfigurationList = 41F5C9722674A3A1002CFB51 /* Build configuration list for PBXNativeTarget "GithubStargazers" */;
 			buildPhases = (
-				41F5C9972674A6C4002CFB51 /* Sources */,
-				41F5C9982674A6C4002CFB51 /* Frameworks */,
-				41F5C9992674A6C4002CFB51 /* Resources */,
+				41F5C9442674A39F002CFB51 /* Sources */,
+				41F5C9452674A39F002CFB51 /* Frameworks */,
+				41F5C9462674A39F002CFB51 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -145,68 +235,68 @@
 			);
 			name = GithubStargazers;
 			productName = GithubStargazers;
-			productReference = 41F5C99B2674A6C4002CFB51 /* GithubStargazers.app */;
+			productReference = 41F5C9482674A39F002CFB51 /* GithubStargazers.app */;
 			productType = "com.apple.product-type.application";
 		};
-		41F5C9B02674A6C6002CFB51 /* GithubStargazersTests */ = {
+		41F5C95D2674A3A1002CFB51 /* GithubStargazersTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41F5C9C82674A6C6002CFB51 /* Build configuration list for PBXNativeTarget "GithubStargazersTests" */;
+			buildConfigurationList = 41F5C9752674A3A1002CFB51 /* Build configuration list for PBXNativeTarget "GithubStargazersTests" */;
 			buildPhases = (
-				41F5C9AD2674A6C6002CFB51 /* Sources */,
-				41F5C9AE2674A6C6002CFB51 /* Frameworks */,
-				41F5C9AF2674A6C6002CFB51 /* Resources */,
+				41F5C95A2674A3A1002CFB51 /* Sources */,
+				41F5C95B2674A3A1002CFB51 /* Frameworks */,
+				41F5C95C2674A3A1002CFB51 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				41F5C9B32674A6C6002CFB51 /* PBXTargetDependency */,
+				41F5C9602674A3A1002CFB51 /* PBXTargetDependency */,
 			);
 			name = GithubStargazersTests;
 			productName = GithubStargazersTests;
-			productReference = 41F5C9B12674A6C6002CFB51 /* GithubStargazersTests.xctest */;
+			productReference = 41F5C95E2674A3A1002CFB51 /* GithubStargazersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		41F5C9BB2674A6C6002CFB51 /* GithubStargazersUITests */ = {
+		41F5C9682674A3A1002CFB51 /* GithubStargazersUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41F5C9CB2674A6C6002CFB51 /* Build configuration list for PBXNativeTarget "GithubStargazersUITests" */;
+			buildConfigurationList = 41F5C9782674A3A1002CFB51 /* Build configuration list for PBXNativeTarget "GithubStargazersUITests" */;
 			buildPhases = (
-				41F5C9B82674A6C6002CFB51 /* Sources */,
-				41F5C9B92674A6C6002CFB51 /* Frameworks */,
-				41F5C9BA2674A6C6002CFB51 /* Resources */,
+				41F5C9652674A3A1002CFB51 /* Sources */,
+				41F5C9662674A3A1002CFB51 /* Frameworks */,
+				41F5C9672674A3A1002CFB51 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				41F5C9BE2674A6C6002CFB51 /* PBXTargetDependency */,
+				41F5C96B2674A3A1002CFB51 /* PBXTargetDependency */,
 			);
 			name = GithubStargazersUITests;
 			productName = GithubStargazersUITests;
-			productReference = 41F5C9BC2674A6C6002CFB51 /* GithubStargazersUITests.xctest */;
+			productReference = 41F5C9692674A3A1002CFB51 /* GithubStargazersUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		41F5C9932674A6C4002CFB51 /* Project object */ = {
+		41F5C9402674A39F002CFB51 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					41F5C99A2674A6C4002CFB51 = {
+					41F5C9472674A39F002CFB51 = {
 						CreatedOnToolsVersion = 12.5;
 					};
-					41F5C9B02674A6C6002CFB51 = {
+					41F5C95D2674A3A1002CFB51 = {
 						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 41F5C99A2674A6C4002CFB51;
+						TestTargetID = 41F5C9472674A39F002CFB51;
 					};
-					41F5C9BB2674A6C6002CFB51 = {
+					41F5C9682674A3A1002CFB51 = {
 						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 41F5C99A2674A6C4002CFB51;
+						TestTargetID = 41F5C9472674A39F002CFB51;
 					};
 				};
 			};
-			buildConfigurationList = 41F5C9962674A6C4002CFB51 /* Build configuration list for PBXProject "GithubStargazers" */;
+			buildConfigurationList = 41F5C9432674A39F002CFB51 /* Build configuration list for PBXProject "GithubStargazers" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,37 +304,39 @@
 				en,
 				Base,
 			);
-			mainGroup = 41F5C9922674A6C4002CFB51;
-			productRefGroup = 41F5C99C2674A6C4002CFB51 /* Products */;
+			mainGroup = 41F5C93F2674A39F002CFB51;
+			productRefGroup = 41F5C9492674A39F002CFB51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41F5C99A2674A6C4002CFB51 /* GithubStargazers */,
-				41F5C9B02674A6C6002CFB51 /* GithubStargazersTests */,
-				41F5C9BB2674A6C6002CFB51 /* GithubStargazersUITests */,
+				41F5C9472674A39F002CFB51 /* GithubStargazers */,
+				41F5C95D2674A3A1002CFB51 /* GithubStargazersTests */,
+				41F5C9682674A3A1002CFB51 /* GithubStargazersUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		41F5C9992674A6C4002CFB51 /* Resources */ = {
+		41F5C9462674A39F002CFB51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41F5C9AB2674A6C6002CFB51 /* LaunchScreen.storyboard in Resources */,
-				41F5C9A82674A6C6002CFB51 /* Assets.xcassets in Resources */,
-				41F5C9A62674A6C4002CFB51 /* Main.storyboard in Resources */,
+				41F5C9582674A3A0002CFB51 /* LaunchScreen.storyboard in Resources */,
+				41F5C9552674A3A0002CFB51 /* Assets.xcassets in Resources */,
+				41F5C9532674A39F002CFB51 /* Main.storyboard in Resources */,
+				41F5C9902674A430002CFB51 /* Config.plist in Resources */,
+				41F5C9862674A3F2002CFB51 /* RepositorySelectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41F5C9AF2674A6C6002CFB51 /* Resources */ = {
+		41F5C95C2674A3A1002CFB51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41F5C9BA2674A6C6002CFB51 /* Resources */ = {
+		41F5C9672674A3A1002CFB51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,60 +346,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		41F5C9972674A6C4002CFB51 /* Sources */ = {
+		41F5C9442674A39F002CFB51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41F5C9A32674A6C4002CFB51 /* ViewController.swift in Sources */,
-				41F5C99F2674A6C4002CFB51 /* AppDelegate.swift in Sources */,
-				41F5C9A12674A6C4002CFB51 /* SceneDelegate.swift in Sources */,
+				41F5C9502674A39F002CFB51 /* ViewController.swift in Sources */,
+				41F5C94C2674A39F002CFB51 /* AppDelegate.swift in Sources */,
+				41F5C98E2674A41A002CFB51 /* PListResolver.swift in Sources */,
+				41F5C94E2674A39F002CFB51 /* SceneDelegate.swift in Sources */,
+				41F5C98D2674A41A002CFB51 /* Stargazer.swift in Sources */,
+				41F5C9842674A3F2002CFB51 /* RepositorySelectionViewModel.swift in Sources */,
+				41F5C9852674A3F2002CFB51 /* RepositorySelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41F5C9AD2674A6C6002CFB51 /* Sources */ = {
+		41F5C95A2674A3A1002CFB51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41F5C9B62674A6C6002CFB51 /* GithubStargazersTests.swift in Sources */,
+				41F5C9632674A3A1002CFB51 /* GithubStargazersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41F5C9B82674A6C6002CFB51 /* Sources */ = {
+		41F5C9652674A3A1002CFB51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41F5C9C12674A6C6002CFB51 /* GithubStargazersUITests.swift in Sources */,
+				41F5C96E2674A3A1002CFB51 /* GithubStargazersUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		41F5C9B32674A6C6002CFB51 /* PBXTargetDependency */ = {
+		41F5C9602674A3A1002CFB51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 41F5C99A2674A6C4002CFB51 /* GithubStargazers */;
-			targetProxy = 41F5C9B22674A6C6002CFB51 /* PBXContainerItemProxy */;
+			target = 41F5C9472674A39F002CFB51 /* GithubStargazers */;
+			targetProxy = 41F5C95F2674A3A1002CFB51 /* PBXContainerItemProxy */;
 		};
-		41F5C9BE2674A6C6002CFB51 /* PBXTargetDependency */ = {
+		41F5C96B2674A3A1002CFB51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 41F5C99A2674A6C4002CFB51 /* GithubStargazers */;
-			targetProxy = 41F5C9BD2674A6C6002CFB51 /* PBXContainerItemProxy */;
+			target = 41F5C9472674A39F002CFB51 /* GithubStargazers */;
+			targetProxy = 41F5C96A2674A3A1002CFB51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		41F5C9A42674A6C4002CFB51 /* Main.storyboard */ = {
+		41F5C9512674A39F002CFB51 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				41F5C9A52674A6C4002CFB51 /* Base */,
+				41F5C9522674A39F002CFB51 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		41F5C9A92674A6C6002CFB51 /* LaunchScreen.storyboard */ = {
+		41F5C9562674A3A0002CFB51 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				41F5C9AA2674A6C6002CFB51 /* Base */,
+				41F5C9572674A3A0002CFB51 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -315,7 +411,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		41F5C9C32674A6C6002CFB51 /* Debug */ = {
+		41F5C9702674A3A1002CFB51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +472,7 @@
 			};
 			name = Debug;
 		};
-		41F5C9C42674A6C6002CFB51 /* Release */ = {
+		41F5C9712674A3A1002CFB51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -431,7 +527,7 @@
 			};
 			name = Release;
 		};
-		41F5C9C62674A6C6002CFB51 /* Debug */ = {
+		41F5C9732674A3A1002CFB51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -439,6 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SV5DY837SM;
 				INFOPLIST_FILE = GithubStargazers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +547,7 @@
 			};
 			name = Debug;
 		};
-		41F5C9C72674A6C6002CFB51 /* Release */ = {
+		41F5C9742674A3A1002CFB51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -458,6 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SV5DY837SM;
 				INFOPLIST_FILE = GithubStargazers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,7 +567,7 @@
 			};
 			name = Release;
 		};
-		41F5C9C92674A6C6002CFB51 /* Debug */ = {
+		41F5C9762674A3A1002CFB51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -491,7 +589,7 @@
 			};
 			name = Debug;
 		};
-		41F5C9CA2674A6C6002CFB51 /* Release */ = {
+		41F5C9772674A3A1002CFB51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -513,7 +611,7 @@
 			};
 			name = Release;
 		};
-		41F5C9CC2674A6C6002CFB51 /* Debug */ = {
+		41F5C9792674A3A1002CFB51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -533,7 +631,7 @@
 			};
 			name = Debug;
 		};
-		41F5C9CD2674A6C6002CFB51 /* Release */ = {
+		41F5C97A2674A3A1002CFB51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -556,43 +654,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41F5C9962674A6C4002CFB51 /* Build configuration list for PBXProject "GithubStargazers" */ = {
+		41F5C9432674A39F002CFB51 /* Build configuration list for PBXProject "GithubStargazers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41F5C9C32674A6C6002CFB51 /* Debug */,
-				41F5C9C42674A6C6002CFB51 /* Release */,
+				41F5C9702674A3A1002CFB51 /* Debug */,
+				41F5C9712674A3A1002CFB51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41F5C9C52674A6C6002CFB51 /* Build configuration list for PBXNativeTarget "GithubStargazers" */ = {
+		41F5C9722674A3A1002CFB51 /* Build configuration list for PBXNativeTarget "GithubStargazers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41F5C9C62674A6C6002CFB51 /* Debug */,
-				41F5C9C72674A6C6002CFB51 /* Release */,
+				41F5C9732674A3A1002CFB51 /* Debug */,
+				41F5C9742674A3A1002CFB51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41F5C9C82674A6C6002CFB51 /* Build configuration list for PBXNativeTarget "GithubStargazersTests" */ = {
+		41F5C9752674A3A1002CFB51 /* Build configuration list for PBXNativeTarget "GithubStargazersTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41F5C9C92674A6C6002CFB51 /* Debug */,
-				41F5C9CA2674A6C6002CFB51 /* Release */,
+				41F5C9762674A3A1002CFB51 /* Debug */,
+				41F5C9772674A3A1002CFB51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41F5C9CB2674A6C6002CFB51 /* Build configuration list for PBXNativeTarget "GithubStargazersUITests" */ = {
+		41F5C9782674A3A1002CFB51 /* Build configuration list for PBXNativeTarget "GithubStargazersUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41F5C9CC2674A6C6002CFB51 /* Debug */,
-				41F5C9CD2674A6C6002CFB51 /* Release */,
+				41F5C9792674A3A1002CFB51 /* Debug */,
+				41F5C97A2674A3A1002CFB51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 41F5C9932674A6C4002CFB51 /* Project object */;
+	rootObject = 41F5C9402674A39F002CFB51 /* Project object */;
 }
