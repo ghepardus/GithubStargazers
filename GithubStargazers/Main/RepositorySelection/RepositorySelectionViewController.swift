@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RepositorySelectionViewController: BaseViewController {
+class RepositorySelectionViewController: BaseViewController<RepositorySelectionViewModel> {
     
     @IBOutlet var ownerTF: UITextField!
     @IBOutlet var repoTF: UITextField!
@@ -43,7 +43,23 @@ class RepositorySelectionViewController: BaseViewController {
     
     //MARK: - Selectors
     @objc func confirmAction(sender: UIButton) {
+        
+        viewModel?.validateForm(owner: ownerTF.text, name: repoTF.text) {
+            [unowned self] result in
             
+            switch result {
+            case .failure(let error):
+            case .success(let success):
+                if let vc = self.storyboard?.instantiateViewController(withIdentifier: "StargazerListViewController") as? StargazerListViewController {
+                    vc.viewModel = StargazerListViewModel(owner: owner, name: name)
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+                
+            }
+            
+        }
+        
+        
     }
     
     @objc func dismissKeyboard() {

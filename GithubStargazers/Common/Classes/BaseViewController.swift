@@ -7,4 +7,12 @@
 
 import UIKit
 
-class BaseViewController: UIViewController { }
+// MARK: - ViewModelable
+public protocol ViewModelable {
+    associatedtype ViewModelType
+    var viewModel: ViewModelType? { get set }
+}
+
+class BaseViewController<ViewModelType: BaseViewModel>: UIViewController, ViewModelable  {
+    public var viewModel: ViewModelType?
+}

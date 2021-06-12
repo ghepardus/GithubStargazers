@@ -19,3 +19,7 @@ enum ServerError {
     case wrongResponseCode
     case wrongMIMEType
 }
+
+enum ValidationError: Error {
+    case emptyOrNull(descripion: String)
+}

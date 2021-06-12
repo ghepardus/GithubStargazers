@@ -7,8 +7,8 @@
 
 import UIKit
 
-class StargazerListViewController: BaseViewController {
-
+class StargazerListViewController: BaseViewController<StargazerListViewModel> {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

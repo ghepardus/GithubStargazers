@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="GithubStargazers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4E-Ex-yZg">
+                                <rect key="frame" x="134" y="393.5" width="146.5" height="109"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Github" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRZ-SL-PPP">
+                                        <rect key="frame" x="0.0" y="0.0" width="146.5" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stargazers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXh-0I-L2v">
+                                        <rect key="frame" x="0.0" y="70.5" width="146.5" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iXh-0I-L2v" secondAttribute="trailing" id="Kxc-Xa-AJ9"/>
+                                    <constraint firstItem="FRZ-SL-PPP" firstAttribute="leading" secondItem="u4E-Ex-yZg" secondAttribute="leading" id="MnC-Mf-VRM"/>
+                                    <constraint firstAttribute="bottom" secondItem="iXh-0I-L2v" secondAttribute="bottom" id="Zsa-S1-pHk"/>
+                                    <constraint firstItem="iXh-0I-L2v" firstAttribute="leading" secondItem="u4E-Ex-yZg" secondAttribute="leading" id="clM-Hr-LgF"/>
+                                    <constraint firstAttribute="trailing" secondItem="FRZ-SL-PPP" secondAttribute="trailing" id="iff-bI-jq6"/>
+                                    <constraint firstItem="FRZ-SL-PPP" firstAttribute="top" secondItem="u4E-Ex-yZg" secondAttribute="top" id="v8t-y1-prM"/>
+                                    <constraint firstItem="iXh-0I-L2v" firstAttribute="top" secondItem="FRZ-SL-PPP" secondAttribute="bottom" constant="32" id="ylV-8E-lrb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u4E-Ex-yZg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TIO-gv-4wS"/>
+                            <constraint firstItem="u4E-Ex-yZg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n5N-Pe-Fbt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="48.883928571428569"/>
+        </scene>
+        <!--Repository Selection View Controller-->
+        <scene sceneID="rsK-uq-EEr">
+            <objects>
+                <viewController storyboardIdentifier="RepositorySelectionViewController" id="YdA-jc-Gwj" customClass="RepositorySelectionViewController" customModule="GithubStargazers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VC2-dn-QJ9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFH-3f-bqW" userLabel="Container">
+                                <rect key="frame" x="32" y="354" width="350" height="188"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repository Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwn-V2-kD7">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repository Owner" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RZk-X0-jBp">
+                                        <rect key="frame" x="0.0" y="66" width="350" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGL-cl-73B">
+                                        <rect key="frame" x="0.0" y="158" width="350" height="30"/>
+                                        <state key="normal" title="Confirm"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="RZk-X0-jBp" secondAttribute="trailing" id="JdU-iF-WTy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fwn-V2-kD7" secondAttribute="trailing" id="QWe-RF-n9Y"/>
+                                    <constraint firstItem="Fwn-V2-kD7" firstAttribute="top" secondItem="tFH-3f-bqW" secondAttribute="top" id="Stz-y1-tu9"/>
+                                    <constraint firstItem="RZk-X0-jBp" firstAttribute="top" secondItem="Fwn-V2-kD7" secondAttribute="bottom" constant="32" id="XyT-Gr-55R"/>
+                                    <constraint firstAttribute="trailing" secondItem="RGL-cl-73B" secondAttribute="trailing" id="cwd-im-Loy"/>
+                                    <constraint firstItem="RGL-cl-73B" firstAttribute="top" secondItem="RZk-X0-jBp" secondAttribute="bottom" constant="58" id="fzy-fq-UgE"/>
+                                    <constraint firstItem="RGL-cl-73B" firstAttribute="leading" secondItem="tFH-3f-bqW" secondAttribute="leading" id="gIn-f7-2RT"/>
+                                    <constraint firstAttribute="bottom" secondItem="RGL-cl-73B" secondAttribute="bottom" id="nXm-kU-Sfj"/>
+                                    <constraint firstItem="RZk-X0-jBp" firstAttribute="leading" secondItem="tFH-3f-bqW" secondAttribute="leading" id="vFQ-Vg-NCP"/>
+                                    <constraint firstItem="Fwn-V2-kD7" firstAttribute="leading" secondItem="tFH-3f-bqW" secondAttribute="leading" id="vkZ-J1-3DD"/>
+                                    <constraint firstItem="Fwn-V2-kD7" firstAttribute="width" secondItem="RZk-X0-jBp" secondAttribute="width" id="xrw-3m-JQy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OrC-8D-Eeo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tFH-3f-bqW" firstAttribute="leading" secondItem="OrC-8D-Eeo" secondAttribute="leading" constant="32" id="Kef-vB-b9H"/>
+                            <constraint firstItem="tFH-3f-bqW" firstAttribute="centerY" secondItem="VC2-dn-QJ9" secondAttribute="centerY" id="WLF-TO-DXx"/>
+                            <constraint firstItem="OrC-8D-Eeo" firstAttribute="trailing" secondItem="tFH-3f-bqW" secondAttribute="trailing" constant="32" id="sHx-Ur-5Vm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="RGL-cl-73B" id="TmX-W2-VU2"/>
+                        <outlet property="ownerTF" destination="RZk-X0-jBp" id="hfH-vD-m0q"/>
+                        <outlet property="repoTF" destination="Fwn-V2-kD7" id="Jeo-Wg-Hy6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDz-6d-u1H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969.56521739130437" y="48.883928571428569"/>
+        </scene>
+        <!--Stargazer List View Controller-->
+        <scene sceneID="pGz-40-g8O">
+            <objects>
+                <viewController storyboardIdentifier="StargazerListViewController" id="6wz-Mz-bs5" customClass="StargazerListViewController" customModule="GithubStargazers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sg5-2g-wdx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dxG-1S-2OT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wL-td-hU4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="49"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
