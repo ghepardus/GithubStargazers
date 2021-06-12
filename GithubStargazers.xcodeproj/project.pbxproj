@@ -25,6 +25,9 @@
 		41F5C9DA2674B789002CFB51 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9D92674B789002CFB51 /* Errors.swift */; };
 		41F5C9DD2674C4C6002CFB51 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9DC2674C4C6002CFB51 /* BaseViewController.swift */; };
 		41F5C9DF2674C4E8002CFB51 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9DE2674C4E8002CFB51 /* BaseViewModel.swift */; };
+		41F5C9E12674EC43002CFB51 /* StargazerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9E02674EC43002CFB51 /* StargazerListViewController.swift */; };
+		41F5C9E32674EC53002CFB51 /* StargazerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9E22674EC53002CFB51 /* StargazerListViewModel.swift */; };
+		41F5C9E52674FB08002CFB51 /* NetworkManager+StargazersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9E42674FB08002CFB51 /* NetworkManager+StargazersList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		41F5C9D92674B789002CFB51 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		41F5C9DC2674C4C6002CFB51 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		41F5C9DE2674C4E8002CFB51 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		41F5C9E02674EC43002CFB51 /* StargazerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerListViewController.swift; sourceTree = "<group>"; };
+		41F5C9E22674EC53002CFB51 /* StargazerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerListViewModel.swift; sourceTree = "<group>"; };
+		41F5C9E42674FB08002CFB51 /* NetworkManager+StargazersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+StargazersList.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,8 @@
 		41F5C9822674A3F2002CFB51 /* StargazersList */ = {
 			isa = PBXGroup;
 			children = (
+				41F5C9E02674EC43002CFB51 /* StargazerListViewController.swift */,
+				41F5C9E22674EC53002CFB51 /* StargazerListViewModel.swift */,
 			);
 			path = StargazersList;
 			sourceTree = "<group>";
@@ -197,7 +205,7 @@
 		41F5C9882674A41A002CFB51 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				41F5C9D62674B21E002CFB51 /* StargazersListRequest */,
+				41F5C9D62674B21E002CFB51 /* StargazersList */,
 				41F5C9D42674AE8B002CFB51 /* NetworkManager.swift */,
 				41F5C9D92674B789002CFB51 /* Errors.swift */,
 			);
@@ -229,12 +237,13 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		41F5C9D62674B21E002CFB51 /* StargazersListRequest */ = {
+		41F5C9D62674B21E002CFB51 /* StargazersList */ = {
 			isa = PBXGroup;
 			children = (
 				41F5C9D72674B23D002CFB51 /* StargazersListRequest.swift */,
+				41F5C9E42674FB08002CFB51 /* NetworkManager+StargazersList.swift */,
 			);
-			path = StargazersListRequest;
+			path = StargazersList;
 			sourceTree = "<group>";
 		};
 		41F5C9DB2674C4AA002CFB51 /* Classes */ = {
@@ -378,9 +387,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				41F5C9502674A39F002CFB51 /* SplashViewController.swift in Sources */,
+				41F5C9E52674FB08002CFB51 /* NetworkManager+StargazersList.swift in Sources */,
 				41F5C94C2674A39F002CFB51 /* AppDelegate.swift in Sources */,
 				41F5C9DD2674C4C6002CFB51 /* BaseViewController.swift in Sources */,
 				41F5C98E2674A41A002CFB51 /* PListResolver.swift in Sources */,
+				41F5C9E12674EC43002CFB51 /* StargazerListViewController.swift in Sources */,
 				41F5C9D82674B23D002CFB51 /* StargazersListRequest.swift in Sources */,
 				41F5C9DF2674C4E8002CFB51 /* BaseViewModel.swift in Sources */,
 				41F5C94E2674A39F002CFB51 /* SceneDelegate.swift in Sources */,
@@ -388,6 +399,7 @@
 				41F5C9DA2674B789002CFB51 /* Errors.swift in Sources */,
 				41F5C98D2674A41A002CFB51 /* Stargazer.swift in Sources */,
 				41F5C9842674A3F2002CFB51 /* RepositorySelectionViewModel.swift in Sources */,
+				41F5C9E32674EC53002CFB51 /* StargazerListViewModel.swift in Sources */,
 				41F5C9852674A3F2002CFB51 /* RepositorySelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
