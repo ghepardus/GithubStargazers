@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		41F5C94C2674A39F002CFB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C94B2674A39F002CFB51 /* AppDelegate.swift */; };
 		41F5C94E2674A39F002CFB51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C94D2674A39F002CFB51 /* SceneDelegate.swift */; };
-		41F5C9502674A39F002CFB51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C94F2674A39F002CFB51 /* ViewController.swift */; };
+		41F5C9502674A39F002CFB51 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C94F2674A39F002CFB51 /* SplashViewController.swift */; };
 		41F5C9532674A39F002CFB51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C9512674A39F002CFB51 /* Main.storyboard */; };
 		41F5C9552674A3A0002CFB51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C9542674A3A0002CFB51 /* Assets.xcassets */; };
 		41F5C9582674A3A0002CFB51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C9562674A3A0002CFB51 /* LaunchScreen.storyboard */; };
@@ -21,6 +21,9 @@
 		41F5C98D2674A41A002CFB51 /* Stargazer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C98A2674A41A002CFB51 /* Stargazer.swift */; };
 		41F5C98E2674A41A002CFB51 /* PListResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C98C2674A41A002CFB51 /* PListResolver.swift */; };
 		41F5C9902674A430002CFB51 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41F5C98F2674A430002CFB51 /* Config.plist */; };
+		41F5C9D52674AE8B002CFB51 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9D42674AE8B002CFB51 /* NetworkManager.swift */; };
+		41F5C9D82674B23D002CFB51 /* StargazersListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9D72674B23D002CFB51 /* StargazersListRequest.swift */; };
+		41F5C9DA2674B789002CFB51 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5C9D92674B789002CFB51 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +47,7 @@
 		41F5C9482674A39F002CFB51 /* GithubStargazers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubStargazers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F5C94B2674A39F002CFB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41F5C94D2674A39F002CFB51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41F5C94F2674A39F002CFB51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41F5C94F2674A39F002CFB51 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		41F5C9522674A39F002CFB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41F5C9542674A3A0002CFB51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41F5C9572674A3A0002CFB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +64,9 @@
 		41F5C98A2674A41A002CFB51 /* Stargazer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stargazer.swift; sourceTree = "<group>"; };
 		41F5C98C2674A41A002CFB51 /* PListResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListResolver.swift; sourceTree = "<group>"; };
 		41F5C98F2674A430002CFB51 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		41F5C9D42674AE8B002CFB51 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		41F5C9D72674B23D002CFB51 /* StargazersListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersListRequest.swift; sourceTree = "<group>"; };
+		41F5C9D92674B789002CFB51 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +119,7 @@
 			children = (
 				41F5C94B2674A39F002CFB51 /* AppDelegate.swift */,
 				41F5C94D2674A39F002CFB51 /* SceneDelegate.swift */,
-				41F5C94F2674A39F002CFB51 /* ViewController.swift */,
+				41F5C94F2674A39F002CFB51 /* SplashViewController.swift */,
 				41F5C9512674A39F002CFB51 /* Main.storyboard */,
 				41F5C9562674A3A0002CFB51 /* LaunchScreen.storyboard */,
 				41F5C9592674A3A0002CFB51 /* Info.plist */,
@@ -189,6 +195,9 @@
 		41F5C9882674A41A002CFB51 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				41F5C9D62674B21E002CFB51 /* StargazersListRequest */,
+				41F5C9D42674AE8B002CFB51 /* NetworkManager.swift */,
+				41F5C9D92674B789002CFB51 /* Errors.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -216,6 +225,14 @@
 				41F5C98F2674A430002CFB51 /* Config.plist */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		41F5C9D62674B21E002CFB51 /* StargazersListRequest */ = {
+			isa = PBXGroup;
+			children = (
+				41F5C9D72674B23D002CFB51 /* StargazersListRequest.swift */,
+			);
+			path = StargazersListRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,10 +367,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41F5C9502674A39F002CFB51 /* ViewController.swift in Sources */,
+				41F5C9502674A39F002CFB51 /* SplashViewController.swift in Sources */,
 				41F5C94C2674A39F002CFB51 /* AppDelegate.swift in Sources */,
 				41F5C98E2674A41A002CFB51 /* PListResolver.swift in Sources */,
+				41F5C9D82674B23D002CFB51 /* StargazersListRequest.swift in Sources */,
 				41F5C94E2674A39F002CFB51 /* SceneDelegate.swift in Sources */,
+				41F5C9D52674AE8B002CFB51 /* NetworkManager.swift in Sources */,
+				41F5C9DA2674B789002CFB51 /* Errors.swift in Sources */,
 				41F5C98D2674A41A002CFB51 /* Stargazer.swift in Sources */,
 				41F5C9842674A3F2002CFB51 /* RepositorySelectionViewModel.swift in Sources */,
 				41F5C9852674A3F2002CFB51 /* RepositorySelectionViewController.swift in Sources */,
