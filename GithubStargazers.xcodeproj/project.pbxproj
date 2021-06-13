@@ -178,7 +178,6 @@
 			children = (
 				41F5C97E2674A3F2002CFB51 /* RepositorySelection */,
 				41F5C9822674A3F2002CFB51 /* StargazersList */,
-				41F5C9832674A3F2002CFB51 /* StargazerDetail */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -200,13 +199,6 @@
 				41F5C9FE26750F39002CFB51 /* StargazerTableViewCell.swift */,
 			);
 			path = StargazersList;
-			sourceTree = "<group>";
-		};
-		41F5C9832674A3F2002CFB51 /* StargazerDetail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = StargazerDetail;
 			sourceTree = "<group>";
 		};
 		41F5C9872674A41A002CFB51 /* Common */ = {
