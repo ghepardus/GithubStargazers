@@ -34,6 +34,7 @@
 		41F5CA012675ED66002CFB51 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5CA002675ED66002CFB51 /* ImageLoader.swift */; };
 		41F5CA032675F1FD002CFB51 /* UIImageView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5CA022675F1FD002CFB51 /* UIImageView+Load.swift */; };
 		41F5CA052675F2B8002CFB51 /* UIImageLaoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5CA042675F2B8002CFB51 /* UIImageLaoder.swift */; };
+		41F5CA072675FCAE002CFB51 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5CA062675FCAE002CFB51 /* LoadingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		41F5CA002675ED66002CFB51 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		41F5CA022675F1FD002CFB51 /* UIImageView+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Load.swift"; sourceTree = "<group>"; };
 		41F5CA042675F2B8002CFB51 /* UIImageLaoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageLaoder.swift; sourceTree = "<group>"; };
+		41F5CA062675FCAE002CFB51 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +273,7 @@
 				41F5C9DC2674C4C6002CFB51 /* BaseViewController.swift */,
 				41F5C9DE2674C4E8002CFB51 /* BaseViewModel.swift */,
 				41F5CA042675F2B8002CFB51 /* UIImageLaoder.swift */,
+				41F5CA062675FCAE002CFB51 /* LoadingTableViewCell.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				41F5C9DA2674B789002CFB51 /* Errors.swift in Sources */,
 				41F5C98D2674A41A002CFB51 /* Stargazer.swift in Sources */,
 				41F5CA012675ED66002CFB51 /* ImageLoader.swift in Sources */,
+				41F5CA072675FCAE002CFB51 /* LoadingTableViewCell.swift in Sources */,
 				41F5C9842674A3F2002CFB51 /* RepositorySelectionViewModel.swift in Sources */,
 				41F5C9E32674EC53002CFB51 /* StargazerListViewModel.swift in Sources */,
 				41F5C9852674A3F2002CFB51 /* RepositorySelectionViewController.swift in Sources */,

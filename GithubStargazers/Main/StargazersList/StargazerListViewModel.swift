@@ -44,7 +44,7 @@ class StargazerListViewModel: BaseViewModel {
             case .failure(let error):
                 resultHandler(.failure(error))
             case.success(let stargasers):
-                self.stargazersList = stargasers
+                self.stargazersList.append(contentsOf: stargasers)
                 resultHandler(.success(true))
             }
         }

@@ -188,6 +188,26 @@
                                             <outlet property="userNameLabel" destination="1ks-vd-h6U" id="I8d-69-Qxb"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoadingTableViewCell" id="HV4-qF-T6u" customClass="LoadingTableViewCell" customModule="GithubStargazers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="107" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HV4-qF-T6u" id="WOj-85-1mg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bIO-rA-3gk">
+                                                    <rect key="frame" x="197" y="12" width="20" height="20"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bIO-rA-3gk" firstAttribute="centerY" secondItem="WOj-85-1mg" secondAttribute="centerY" id="fQr-3h-4qz"/>
+                                                <constraint firstItem="bIO-rA-3gk" firstAttribute="centerX" secondItem="WOj-85-1mg" secondAttribute="centerX" id="sYP-9Q-Nlo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="spinner" destination="bIO-rA-3gk" id="xb7-8B-xDC"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
