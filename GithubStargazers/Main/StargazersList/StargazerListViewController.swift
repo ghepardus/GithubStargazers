@@ -7,23 +7,42 @@
 
 import UIKit
 
-class StargazerListViewController: BaseViewController<StargazerListViewModel> {
+class StargazerListViewController: BaseViewController<StargazerListViewModel>, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet var tableView : UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
 
-        // Do any additional setup after loading the view.
+        viewModel?.fetchInitialData() {
+            [unowned self] result in
+            
+            switch result {
+            case .success(_):
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.viewModel?.stargazersList.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: StargazerTableViewCell = tableView.dequeueReusableCell(withIdentifier: "StargazerTableViewCell") as! StargazerTableViewCell
+        if let viewModel = self.viewModel {
+            cell.userNameLabel.text = viewModel.stargazersList[indexPath.row].name
+        }
+        return cell
+    }
 
 }

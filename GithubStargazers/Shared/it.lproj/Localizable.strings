@@ -6,6 +6,10 @@
   
 */
 "confirm" = "Conferma";
+"alert.title" = "Attenzione";
+"validation.alert.message" = " è vuoto.";
 
 "repository.owner" = "Proprietario Repository";
 "repository.name" = "Nome Repository";
+
+"repository.selection.title" = "Selezione";

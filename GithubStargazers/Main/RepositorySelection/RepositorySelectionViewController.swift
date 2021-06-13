@@ -39,11 +39,30 @@ class RepositorySelectionViewController: BaseViewController<RepositorySelectionV
     
     private func setupUI() {
         
+        self.title = NSLocalizedString("repository.selection.title", comment: "title")
+        
         repoTF.placeholder = NSLocalizedString("repository.name", comment: "Repository name placeholder")
         ownerTF.placeholder = NSLocalizedString("repository.owner", comment: "Repository owner placeholder")
         
         confirmButton.setTitle(title: NSLocalizedString("confirm", comment: "confirm"))
         confirmButton.addTarget(self, action: #selector(confirmAction), for: .touchUpInside)
+    }
+    
+    private func showError(error: ValidationError) {
+        
+        let alertTitle = NSLocalizedString("alert.title", comment: "alert title")
+        var alertMessage = ""
+        
+        switch error {
+        case .emptyOrNull(let description):
+            alertMessage = description
+        }
+        
+        alertMessage += NSLocalizedString("validation.alert.message", comment: "alert title")
+        
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     //MARK: - Selectors
@@ -54,9 +73,9 @@ class RepositorySelectionViewController: BaseViewController<RepositorySelectionV
             
             switch result {
             case .failure(let error):
-                print(error)
+                self.showError(error: error)
             case .success(let success):
-                if let vc = self.storyboard?.instantiateViewController(withIdentifier: "StargazerListViewController") as? StargazerListViewController {
+                if let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "StargazerListViewController") as? StargazerListViewController {
                     vc.viewModel = StargazerListViewModel(owner: success.owner, name: success.name)
                     self.navigationController?.pushViewController(vc, animated: true)
                 }

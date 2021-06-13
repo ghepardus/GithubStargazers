@@ -7,6 +7,10 @@
 */
 
 "confirm" = "Confirm";
+"alert.title" = "Attention";
+"validation.alert.message" = " is empty.";
 
 "repository.owner" = "Repository Owner";
 "repository.name" = "Repository Name";
+
+"repository.selection.title" = "Selection";
