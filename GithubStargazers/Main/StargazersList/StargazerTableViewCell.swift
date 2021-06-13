@@ -12,16 +12,21 @@ class StargazerTableViewCell: UITableViewCell {
     @IBOutlet var userNameLabel: UILabel!
     @IBOutlet var userNameDescriptionLabel: UILabel!
     @IBOutlet var userImage: UIImageView!
+    
+    var onReuse: () -> Void = {}
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        userImage.image = nil
+        userImage.cancelImageLoad()
     }
 
 }

@@ -12,7 +12,6 @@ struct Stargazer {
     let name: String?
     let identifier: Int?
     let profileImageURL: URL?
-    var profileImage: UIImage?
 }
  
 extension Stargazer: Decodable {
