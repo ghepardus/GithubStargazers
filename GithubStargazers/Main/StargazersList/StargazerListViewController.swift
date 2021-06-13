@@ -10,6 +10,8 @@ import UIKit
 class StargazerListViewController: BaseViewController<StargazerListViewModel>, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView : UITableView!
+    @IBOutlet var messageViewContainer: UIView!
+    @IBOutlet var messageLabel: UILabel!
     
     let loader = ImageLoader()
     
@@ -26,9 +28,10 @@ class StargazerListViewController: BaseViewController<StargazerListViewModel>, U
         self.title = NSLocalizedString("stargazers.list.title", comment: "title")
         
         self.tableView.isHidden = true
-        
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        self.messageViewContainer.isHidden = true
     }
     
     private func getData() {
@@ -41,7 +44,12 @@ class StargazerListViewController: BaseViewController<StargazerListViewModel>, U
                 self.tableView.isHidden = false
                 self.tableView.reloadData()
             case .failure(let error):
-                print(error)
+                switch error {
+                case .emptyData:
+                    self.showNoDataMessage()
+                default:
+                    self.showError()
+                }
             }
         }
     }
@@ -56,13 +64,25 @@ class StargazerListViewController: BaseViewController<StargazerListViewModel>, U
                 self.tableView.reloadData()
             case .failure(let error):
                 switch error {
-                case .noData:
-                    print(error)
+                case .emptyData:
+                    self.showNoDataMessage()
                 default:
-                    print(error)
+                    self.showError()
                 }
             }
         }
+    }
+    
+    private func showError() {
+        self.tableView.isHidden = true
+        self.messageLabel.text = NSLocalizedString("fetch.error.message", comment: "error message")
+        self.messageViewContainer.isHidden = false
+    }
+    
+    private func showNoDataMessage() {
+        self.tableView.isHidden = true
+        self.messageLabel.text = NSLocalizedString("fetch.nodata.message", comment: "error message")
+        self.messageViewContainer.isHidden = false
     }
     
     //MARK: - UITableView delegate & datasource

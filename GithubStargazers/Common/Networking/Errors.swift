@@ -12,6 +12,7 @@ enum StargazerError: Error {
     case clientError
     case serverError(type: ServerError)
     case noData
+    case emptyData
     case dataDecodingError
 }
 

@@ -20,8 +20,11 @@ class UIImageLoader {
     
     let token = imageLoader.loadImage(url) { [unowned self] result in
         
-        
-        defer { self.uuidMap.removeValue(forKey: imageView) }
+        defer {
+            if self.uuidMap[imageView] != nil {
+                self.uuidMap.removeValue(forKey: imageView)
+            }
+        }
         
         switch (result) {
         case .success(let image):

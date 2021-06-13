@@ -10,6 +10,9 @@
 "alert.title" = "Attention";
 "validation.alert.message" = " is empty.";
 
+"fetch.nodata.message" = "No Stargazer found for this repository.";
+"fetch.error.message" = "Ops!\nSomething went wrong.";
+
 "repository.owner" = "Repository Owner";
 "repository.name" = "Repository Name";
 

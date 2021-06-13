@@ -30,35 +30,37 @@ extension NetworkManager {
         }
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) -> Void in
-            
-            guard error == nil else {
-                resultHandler(.failure(.clientError))
-                return
-            }
-            
-            guard let response = response as? HTTPURLResponse, 200...299 ~= response.statusCode else {
-                resultHandler(.failure(.serverError(type: .wrongResponseCode)))
-                return
-            }
-            
-            guard let mime = response.mimeType, mime == "application/json" else {
-                resultHandler(.failure(.serverError(type: .wrongMIMEType)))
-                return
-            }
-            
-            guard let data = data else {
-                resultHandler(.failure(.noData))
-                return
-            }
-            
-            do {
-                let stargazers = try JSONDecoder().decode([Stargazer].self, from: data)
-                DispatchQueue.main.async {
-                    resultHandler(.success(stargazers))
+            DispatchQueue.main.async {
+                guard error == nil else {
+                    resultHandler(.failure(.clientError))
+                    return
                 }
                 
-            } catch {
-                resultHandler(.failure(.dataDecodingError))
+                guard let response = response as? HTTPURLResponse, 200...299 ~= response.statusCode else {
+                    resultHandler(.failure(.serverError(type: .wrongResponseCode)))
+                    return
+                }
+                
+                guard let mime = response.mimeType, mime == "application/json" else {
+                    resultHandler(.failure(.serverError(type: .wrongMIMEType)))
+                    return
+                }
+                
+                guard let data = data else {
+                    resultHandler(.failure(.noData))
+                    return
+                }
+                
+                do {
+                    let stargazers = try JSONDecoder().decode([Stargazer].self, from: data)
+                    if stargazers.isEmpty {
+                        resultHandler(.failure(.emptyData))
+                    } else {
+                        resultHandler(.success(stargazers))
+                    }
+                } catch {
+                    resultHandler(.failure(.dataDecodingError))
+                }
             }
         }
         
